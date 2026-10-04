@@ -24,11 +24,16 @@
 - [x] Hardware SPI1 initialization
 - [x] SPI byte exchange
 - [x] W25Q64 JEDEC ID read
+- [x] W25Q64 sector erase
+- [x] W25Q64 page program
+- [x] W25Q64 data read
+- [x] W25Q64 busy status polling
+- [x] W25Q64 automatic cross-page write
+- [ ] W25Q64 data logging
 - [ ] MPU6050 self-test
 - [ ] ADC + DMA sampling
 - [ ] Timer based task scheduling
 - [ ] USART command interface
-- [ ] W25Q64 data logging
 - [ ] System state machine
 
 ## Current W25Q64 Test
@@ -42,9 +47,18 @@ Current SPI pins:
 - PA6: MISO
 - PA7: MOSI
 
-The JEDEC ID can be read successfully.
+Current supported functions:
 
-Expected result:
+- JEDEC ID read
+- Write Enable
+- Status Register-1 read
+- Busy status polling
+- 4KB sector erase
+- Page program
+- Data read
+- Automatic cross-page writing
+
+JEDEC ID:
 
 `EF 40 17`
 
@@ -69,3 +83,4 @@ STM32F103-DataLogger/
 ├── System/
 ├── User/
 └── p.uvprojx
+```
