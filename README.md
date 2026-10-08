@@ -30,10 +30,10 @@
 - [x] W25Q64 busy status polling
 - [x] W25Q64 automatic cross-page write
 - [ ] W25Q64 data logging
-[x] MPU6050 WHO_AM_I self-test
-[x] MPU6050 initialization
-[x] MPU6050 six-axis raw data reading
-- [ ] ADC + DMA sampling
+- [x] MPU6050 WHO_AM_I self-test
+- [x] MPU6050 initialization
+- [x] MPU6050 six-axis raw data reading
+- [x] ADC + DMA sampling
 - [ ] Timer based task scheduling
 - [ ] USART command interface
 - [ ] System state machine
